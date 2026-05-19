@@ -83,14 +83,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->addAddress('thegrowthmonks@gmail.com');
 
         $mail->isHTML(true);
-        $mail->Subject = 'New Lead - Mahindra Vista Kandivali East';
+        $mail->Subject = 'New Lead - Rustomjee Ozone (New Phase)';
         $mail->Body = "
             <h2>New Lead Submission</h2>
             <p><strong>Name:</strong> {$safe_name}</p>
             <p><strong>Email:</strong> {$safe_email}</p>
             <p><strong>Phone:</strong> {$safe_phone}</p>
             <p><strong>Interested Configuration:</strong> {$safe_config}</p>
-            <p><strong>Project:</strong> Mahindra Vista Kandivali</p>
+            <p><strong>Project:</strong> Rustomjee Ozone (New Phase)</p>
         ";
 
         if ($mail->send()) {
@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 "email"        => $safe_email,
                 "phone"        => $safe_phone,
                 "config"       => $safe_config,
-                "source"       => "Mahindra Vista Kandivali Website",
+                "source"       => "Rustomjee Ozone Website",
                 "submitted_at" => date("Y-m-d H:i:s")
             ]);
 
