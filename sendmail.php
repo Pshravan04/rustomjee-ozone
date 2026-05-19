@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port       = 587;
 
         $mail->setFrom('rock83694@gmail.com', 'Website Lead');
-        $mail->addAddress('tgmmayur@gmail.com');
+        $mail->addAddress('salesconnect.teambb@gmail.com');
         $mail->addAddress('thegrowthmonks@gmail.com');
 
         $mail->isHTML(true);
